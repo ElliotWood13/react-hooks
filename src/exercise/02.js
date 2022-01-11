@@ -5,7 +5,7 @@ import * as React from 'react'
 
 const useSyncLocalStorageWithState = (
     key,
-    defaultValue = '', 
+    defaultValue = '',
     { serialize = JSON.stringify, deserialize = JSON.parse } = {}
   ) => {
   const [state, setState] = React.useState(() => {
